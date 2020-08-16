@@ -1,0 +1,578 @@
+/*-------------------NORMALIZE--------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, gilabel, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.only-sm {
+    display: none !important;
+}
+.md-and-sm {
+    display: none !important;
+}
+
+.md-and-lg {
+    display: flex !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*---------------------FONTS------------------------------*/
+@font-face {
+	font-family: 'PTRootUIWebRegular';
+	src: url(./Fonts/Regular/PT\ Root\ UI_Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWebBold';
+	src: url(./Fonts/Bold/PT\ Root\ UI_Bold.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUIWebMedium';
+	src: url(./Fonts/Medium/PT\ Root\ UI_Medium.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*---------------------GENERAL------------------------------*/
+
+body {
+    font-family: 'PTRootUIWebRegular';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 25px;
+    /* width: calc(100vw - 50px); */
+}
+
+/*---------------------HEADER------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid gray;
+}
+
+.header_intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_intro::before {
+    content: "";
+    position: absolute;
+    border: 2px #D70E2A solid;
+    left: 0px;
+    top: 59px;
+    width: 203px;
+}
+
+.eldorado {
+    margin-left: 25px;
+}
+
+.mvideo {
+    margin-left: 34px;
+}
+
+.header_tittle {
+    margin-left: 40px;
+}
+
+.icon-menu {
+    margin-right: 25px;
+}
+
+/*---------------------INTRO------------------------------*/
+
+.intro{
+    padding-bottom: 60px;
+    border-bottom: 1px solid gray;
+    font-family: 'PTRootUIWebMedium';
+}
+
+.samsung_tittle {
+    height: 24px;
+    background-color: #EFEFEF;
+    margin: 0 -25px;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 5px 15px ;
+}
+
+.intro_title {
+    font-size: 38px;
+    line-height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 2px rgb(196, 196, 196);
+    padding-bottom: 40px;
+}
+
+.new-disign_title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.new-disign_blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrap-block {
+    display: flex;
+}
+
+
+.block-one {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 304px;
+    background-color: #171717;
+    border-radius: 5px;
+}
+
+.block-one img {
+    padding-top: 20px;
+    align-self: center;
+    max-width: 75%;
+}
+
+.block-one-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 22px 18px 25px 15px;
+}
+
+
+.block-text {
+    height: 120px;
+    font-weight: 500;
+}
+.block-two {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center  ;
+}
+
+.block-two .block-text {
+    margin-top: 46px;
+}
+
+.block-two img {
+    position: relative;
+}
+
+.block-three {
+    margin-left: 20px;  
+}
+
+.block-three .block-text {
+    margin-top: 20px;
+}
+
+.block-three img {
+    position: relative;
+    left: 30%;
+    right: 50%;
+}
+
+.block-four img {
+    position: relative;
+    left: 30%;
+    right: 50%;
+}
+
+.block-four .block-text {
+    margin-top: 20px;
+}
+
+.block-four {
+    margin-left: 20px;
+}
+
+
+/*---------------------SPECIFICATION------------------------------*/
+
+.specifications {
+    margin-bottom: 100px;
+}
+
+.specifications_title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.specifications_info {
+    display: flex;
+    display: flex;
+    align-items: end;
+    
+}
+
+.specifications_info_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.list-text {
+    margin-left: 42px;
+}
+
+.list-item img {
+    align-self: center
+}
+
+.specifications_info_list {
+    margin-left: 48px;
+}
+
+
+
+/*---------------------ACCESSORIES------------------------------*/
+
+.accessories {
+    padding-bottom: 60px;
+    border-bottom: solid 2px rgb(196, 196, 196);
+}
+
+.accessories_title {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.accessories_list {
+    display: flex;
+    margin-top: 54px;
+}
+
+.accessories-item {
+    position: relative;
+}
+.accessories-item:not(:last-child) {
+    margin-right: 20px;
+   
+}
+
+.accessories-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.accessories-wrap > div {
+    flex-basis: 50%;
+}
+.accessories-item-text {
+    padding-top: 20px;
+    border-top: solid 1px rgb(196, 196, 196);
+
+}
+.accessories-wrap:first-child {
+    margin-right: 21px;
+}
+.top-line::before {
+    content: "";
+    position: absolute;
+    border: 1px #000000 solid;
+    left: 0px;
+    width: 50px;
+}
+
+
+/*---------------------APPS------------------------------*/
+
+.apps {
+    margin-bottom: 300px;
+}
+
+.apps_title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+.apps_list-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.apps_list-2 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.apps-text {
+    margin-top: 20px;
+}
+
+.apps-item {
+    width: 304px;
+    margin-right: 20px;
+}
+
+.apps-item:last-child {
+    margin-right: 0;
+}
+
+
+.apps-item img {
+display: block;
+margin: 0 auto;
+}
+
+.only-md {
+    display: none !important;
+}
+
+
+
+/*---------------------MEDIA------------------------------*/
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .accessories_list {
+        flex-direction: column;
+    }
+    .md-and-sm {
+        display: flex !important;
+    }
+    .only-lg {
+        display: none !important;
+    }
+    .new-disign_blocks {
+        flex-direction: column;
+    }
+
+    .block-three,.block-four {
+        margin-top: 50px;
+    }
+
+    .wrap-block > div {
+        flex-basis: 50%;
+    }
+    .specifications-mobile-img {
+        width: 50%;
+    }
+    .accessories-wrap:first-child {
+        margin-right: 0;
+    }
+    .accessories-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .apps_list-2 .apps-item, .apps_list-1 .apps-item {
+        width: 216px;
+    }
+    .apps_list-2 {
+        width: 62%;
+        justify-content: space-between;
+    }
+    
+    .only-lg {
+        display: none !important;
+    }
+
+    .only-md {
+        display: flex !important;
+    }
+  
+}
+@media screen and (max-width: 720px) {
+    .container {
+        margin: 0;
+    }
+    .specifications-mobile-img {
+        width: 100%;
+    }
+
+    .md-and-lg{
+        display: none !important;
+    }
+
+    .only-lg {
+        display: none !important;
+    }
+    .only-sm {
+        display: flex !important;
+    }
+    .block-one {
+        flex-basis: 100% !important;
+    }
+
+    .new-disign_blocks > div:not(:first-child) {
+        margin-top: 40px;
+    }
+    .block-text {
+        height: auto;
+    }
+    .specifications_info { 
+        flex-direction: column;
+    }
+
+    .specifications{
+        margin-bottom: 70px;
+    }
+    .list-item {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .container {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .list-text {
+        margin-left: 0;
+    }
+    .specifications_info_list {
+    margin-left: 0;
+    }
+    .accessories-wrap:first-child {
+        flex-direction: column;
+    }
+    .apps_list-1 , .apps_list-2 {
+        flex-direction: column;
+        width: 100%;
+    } 
+    .apps-item {
+        font-size: 12px;
+        line-height: 17px;
+        display: flex;
+        width: auto !important;
+        margin-right: 0;
+        padding: 30px 0;
+        justify-content: space-around;
+    }
+    .apps-item img {}
+
+    .apps-text {
+        margin-top: 0;
+        max-width: 205px;
+        margin-left: 10px;
+    }
+
+    .list-text {
+        margin-top: 20px;
+    }
+
+    .apps_list-1{
+        margin-top: 0;
+    }
+    .apps_list-2 {
+        margin-top: 0;
+    }
+    .apps_list-1 .apps-item:nth-child(2), 
+    .apps_list-2 .apps-item:first-child {
+        flex-direction: row-reverse;
+
+    }
+    .apps_list-2 .apps-item:first-child {
+        flex-direction: row-reverse;
+    }
+    .apps-text {
+        margin-top: 0;
+        max-width: 205px;
+    }
+    .apps_list-1 .apps-item {
+        border-bottom: solid 2px rgb(196, 196, 196);;
+    }
+    .apps_list-2 .apps-item:first-child {
+        border-bottom: solid 2px rgb(196, 196, 196);;
+    } 
+    .accessories-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .accessories-item img {
+        padding-bottom: 25px;
+    }
+
+    .accessories_list {
+        margin-top: 30px;
+    }
+    .only-md {
+        display: none !important;
+    }
+    
+    .block-three {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    
+}
